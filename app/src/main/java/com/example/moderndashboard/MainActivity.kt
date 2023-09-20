@@ -27,7 +27,17 @@ class MainActivity : AppCompatActivity() {
         casa.setOnClickListener {
             val intent = Intent(this@MainActivity,HomeActivity::class.java)
             startActivity(intent)
+
         }
+
+
+        val Bea= findViewById<CardView>(R.id.Bea)
+        Bea.setOnClickListener {
+            val intent = Intent(this@MainActivity,BeautyActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
         val macy= findViewById<CardView>(R.id.macy)
         macy.setOnClickListener {
